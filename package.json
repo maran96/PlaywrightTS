@@ -1,0 +1,24 @@
+{
+  "name": "playwright-typescript-framework",
+  "version": "1.0.0",
+  "description": "Framework built using playwright",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "functional-test": "playwright test --project=pipeline  --config=config.js",
+    "functional-test-local": "tsc && playwright test --project=local  --config=config.js"
+  },
+  "keywords": [],
+  "author": "Nitish Sachdeva",
+  "license": "ISC",
+  "dependencies": {
+    "allure-playwright": "^2.0.0-beta.15",
+    "dotenv": "^16.0.1",
+    "playwright": "^1.32.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0",
+    "typescript": "^4.6.3"
+  }
+}
